@@ -29,7 +29,7 @@ jobs:
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: |
           node - <<'EOF'
-          const TABLE = "YOUR_TABLE_NAME";   // <-- change this
+          const TABLE = "revive";   // <-- change this
 
           async function ping() {
             const url  = `${process.env.SUPABASE_URL}/rest/v1/${TABLE}?select=*&limit=1`;
